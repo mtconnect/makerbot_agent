@@ -1,0 +1,9 @@
+#Examples
+A series of scripts that should allow users easy access to the makerbot_driver.
+
+##How To Use Each Script
+All scripts must be given commands using standard line parsing.  To see a list of all parameters, issue:
+
+    python <name_of_script>.py --help
+
+This will output all parameters you as a user can supply to execute these scripts.

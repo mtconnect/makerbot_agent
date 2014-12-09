@@ -1,0 +1,18 @@
+Source: makerbot-driver
+Section: unknown
+Priority: extra
+Maintainer: MakerBot Industries dev team <dev@makerbot.com>
+Build-Depends: cdbs, debhelper, python2.7, mb-pyserial (=2.0.0)
+Standards-Version: 3.9.2
+Homepage: https://github.com/makerbot/s3g
+#Vcs-Git: git://git.debian.org/collab-maint/s3g.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/s3g.git;a=summary
+
+Package: makerbot-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python2.7, mb-pyserial (=2.0.0), avrdude
+Description: Python interface to MakerBot s3g devices.
+ This library permits a python2.7 script to discover and control a 
+ Replicator or other 3d printing device that supports the s3g
+ protocol.
+

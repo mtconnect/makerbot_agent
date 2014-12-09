@@ -1,0 +1,23 @@
+{
+  "firmware"  :
+  {
+    "part"  :   "m1280",
+    "baudrate"  :   57600,
+    "programmer"  :   "stk500v1",
+    "versions"  :
+      {
+      "5.1" : [
+        "firmware/Mighty-mb40-v5.5.hex",
+        "Initial Firmware Release"
+        ],
+      "5.2" : [
+        "firmware/Mighty-mb40-v5.2.hex",
+        "Nozzle Tolerance added to EEPROM.  Updated onboard menus.  X,Y calibration tool added."
+        ],
+      "5.5" : [
+        "firmware/Mighty-mb40-v5.5.hex",
+        "Acceleration added to motor motion.  Digipot Updates."
+        ]
+      }
+   }
+}

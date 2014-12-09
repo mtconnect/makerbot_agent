@@ -1,0 +1,17 @@
+Download and install the appropriate version of Python for your OS: https://www.python.org/downloads/
+
+This was built using Python 2.7.
+
+Download the appropriate version of PySerial: http://pyserial.sourceforge.net/pyserial.html
+
+For this version, I included the version that works with Python 2.7 in the same folder as this text file.
+
+go to "pyserial-master" folder
+run "python setup.py install", may need to run with sudo
+
+To interface with the Makerbot, go their Github repository and download the source: https://github.com/makerbot/s3g
+
+For this version, I included the needed source that works with Python 2.7 in the same folder as this text file.
+
+go to "s3g-master" folder
+run "python setup.py install", may need to run with sudo

@@ -1,0 +1,9 @@
+msc {
+  width = "800";
+
+  PC,Host,Tool;
+
+  PC->Host [ label="Get Extended Position" ];
+  Host->Host [ label="RetrievePosition()" ];
+  Host->PC [ label="Success, Position=[x,y,z,a,b]" ];
+}

@@ -1,0 +1,46 @@
+// vim:ai:et:fenc=utf-8:ff=unix:sw=4:ts=4:
+
+digraph
+{
+  rankdir=TB;
+
+  "RESPONSE=SUCCESS?" [shape=diamond];
+  "RESPONSE=SUCCESS?" -> "RETURN" [label="yes"];
+  "RESPONSE=SUCCESS?" -> "RESPONSE=GENERIC_ERROR?" [label="no", weight=10];
+
+  "RESPONSE=GENERIC_ERROR?" [shape=diamond];
+  "RESPONSE=GENERIC_ERROR?" -> "RAISE GENERIC_ERROR" [label="yes"];
+  "RESPONSE=GENERIC_ERROR?" -> "RESPONSE=BUFFER_OVERFLOW?" [label="no", weight=10];
+
+  "RESPONSE=BUFFER_OVERFLOW?" [shape=diamond];
+  "RESPONSE=BUFFER_OVERFLOW?" -> "RAISE BUFFER_OVERFLOW_ERROR" [label="yes"];
+  "RESPONSE=BUFFER_OVERFLOW?" -> "RESPONSE=CRC_MISMATCH?" [label="no", weight=10];
+
+  "RESPONSE=CRC_MISMATCH?" [shape=diamond];
+  "RESPONSE=CRC_MISMATCH?" -> "RAISE CRC_MISMATCH_ERROR" [label="yes"];
+  "RESPONSE=CRC_MISMATCH?" -> "RESPONSE=PACKET_TOO_BIG?" [label="no", weight=10];
+
+  "RESPONSE=PACKET_TOO_BIG?" [shape=diamond];
+  "RESPONSE=PACKET_TOO_BIG?" -> "RAISE PROTOCOL_ERROR" [label="yes"];
+  "RESPONSE=PACKET_TOO_BIG?" -> "RESPONSE=DOWNSTREAM_TIMEOUT?" [label="no", weight=10];
+
+  "RESPONSE=DOWNSTREAM_TIMEOUT?" [shape=diamond];
+  "RESPONSE=DOWNSTREAM_TIMEOUT?" -> "RAISE TRANSMISSION_ERROR" [label="yes"];
+  "RESPONSE=DOWNSTREAM_TIMEOUT?" -> "RESPONSE=TOOL_LOCK_TIMEOUT?" [label="no", weight=10];
+
+  "RESPONSE=TOOL_LOCK_TIMEOUT?" [shape=diamond];
+  "RESPONSE=TOOL_LOCK_TIMEOUT?" -> "RAISE TRANSMISSION_ERROR" [label="yes"];
+  "RESPONSE=TOOL_LOCK_TIMEOUT?" -> "RESPONSE=CANCEL_BUILD?" [label="no", weight=10];
+
+  "RESPONSE=CANCEL_BUILD?" [shape=diamond];
+  "RESPONSE=CANCEL_BUILD?" -> "RAISE BUILD_CANCELLED_ERROR" [label="yes"];
+  "RESPONSE=CANCEL_BUILD?" -> "RAISE PROTOCOL_ERROR" [label="no", weight=10];
+
+  "RESPONSE=ACTIVE_LOCAL_BUILD?" [shape=diamond];
+  "RESPONSE=ACTIVE_LOCAL_BUILD?" -> "RAISE ACTIVE_BUILD_ERROR" [label="yes"];
+  "RESPONSE=ACTIVE_LOCAL_BUILD?" -> "RAISE PROTOCOL_ERROR" [label="no", weight=10];
+
+  "RESPONSE=BOT_OVERHEAT?" [shape=diamond];
+  "RESPONSE=BOT_OVERHEAT?" -> "RAISE BOT_OVERHEAT_ERROR" [label="yes"];
+  "RESPONSE=BOT_OVERHEAT?" -> "RAISE PROTOCOL_ERROR" [label="no", weight=10];
+}

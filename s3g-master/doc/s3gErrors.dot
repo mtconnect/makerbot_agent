@@ -1,0 +1,43 @@
+// vim:ai:et:fenc=utf-8:ff=unix:sw=4:ts=4:
+
+digraph
+{
+  rankdir=TB;
+
+  edge[
+  fontsize = 16
+  fontcolor = "Red"
+  ]
+
+  "RecoverableError" [shape=diamond];
+  "PacketDecodeError" [shape=diamond];
+  "ProtocolError" [shape=diamond]; 
+  "ParameterError" [shape=diamond];
+  "ToolBusError" [shape=diamond];
+  "ExtendedStopError";
+  "TransmissionError";
+  "SDCardError";
+  "ExtendedStopError";
+  "BuildCancelError";
+  "BufferOverflowError";
+  "GenericError" -> "RecoverableError";
+  "CRCMismatchError" -> "RecoverableError";
+  "TimeoutError" -> "RecoverableError";
+  "DownstreamTimeoutError" -> "ToolBusError";
+  "ToolLockError" ->  "ToolBusError";
+
+  "PacketDecodeError" -> "RecoverableError";
+  "PacketLengthError" -> "PacketDecodeError";
+  "PacketLengthFieldError" -> "PacketDecodeError";
+  "PacketHeaderError" -> "PacketDecodeError";
+  "PacketCRCError" -> "PacketDecodeError"; 
+
+  "HeatElementReadyError" -> "ProtocolError";
+  "EEPROMMismatchError" ->  "ProtocolError";
+  "UnrecognizedResponseError" -> "ProtocolError";
+
+  "ButtonError" -> "ParameterError";
+  "EEPROMLengthError" -> "ParameterError";
+  "ToolIndexError" -> "ParameterError";
+  "PointLengthError" -> "ParameterError";
+} 

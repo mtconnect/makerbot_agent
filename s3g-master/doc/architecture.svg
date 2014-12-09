@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="architecture.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lstart"
+       style="overflow:visible">
+      <path
+         id="path3866"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3869"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3851"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="455.44176"
+     inkscape:cy="775.05612"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1286"
+     inkscape:window-height="925"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3027"
+       transform="translate(38.744743,39.285714)"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658">
+      <rect
+         y="16.924137"
+         x="27.087082"
+         height="65.65992"
+         width="255.5686"
+         id="rect2985"
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text2987"
+         y="61.402534"
+         x="133.34013"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:32px"
+           y="61.402534"
+           x="133.34013"
+           id="tspan2989"
+           sodipodi:role="line">PC</tspan></text>
+    </g>
+    <g
+       id="g3022"
+       transform="translate(19.628353,25.139352)"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658">
+      <rect
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3010"
+         width="255.5686"
+         height="65.65992"
+         x="46.203476"
+         y="146.4346" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="136.37059"
+         y="190.70206"
+         id="text3012"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3014"
+           x="136.37059"
+           y="190.70206"
+           style="font-size:32px">Host</tspan></text>
+    </g>
+    <g
+       id="g3049"
+       transform="translate(77.840383,80.000004)"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658">
+      <rect
+         y="244.79509"
+         x="151.84634"
+         height="65.65992"
+         width="139.14003"
+         id="rect3016"
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3018"
+         y="289.55475"
+         x="176.60385"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:32px"
+           y="289.55475"
+           x="176.60385"
+           id="tspan3020"
+           sodipodi:role="line">Tool 1</tspan></text>
+    </g>
+    <rect
+       y="324.79507"
+       x="393.54166"
+       height="65.65992"
+       width="139.14003"
+       id="rect3032"
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 3;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3034"
+       y="369.55472"
+       x="416.60385"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658"><tspan
+         style="font-size:32px"
+         y="369.55472"
+         x="416.60385"
+         id="tspan3036"
+         sodipodi:role="line">Tool N</tspan></text>
+    <g
+       id="g3044"
+       transform="translate(80.714283,77.142857)"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658">
+      <rect
+         y="247.65224"
+         x="-14.88246"
+         height="65.65992"
+         width="139.14003"
+         id="rect3038"
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3040"
+         y="292.41187"
+         x="9.4609852"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:32px"
+           y="292.41187"
+           x="9.4609852"
+           id="tspan3042"
+           sodipodi:role="line">Tool 0</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend)"
+       d="m 136.42857,125.93361 0,40.71428"
+       id="path3073"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5029"
+       d="m 136.42857,241.64044 0,77.10464"
+       style="fill:none;stroke:#000000;stroke-width:0.99999988px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend)"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+       d="m 300,294.50504 0,24.99999"
+       id="path5031"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5219"
+       d="m 468.57143,294.50504 0,24.99999"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 2;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow2Lend)"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 300.25247,294.50504 -163.8239,0"
+       id="path5221"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5223"
+       d="m 465.96676,294.50504 -163.8239,0"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 4;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="150.71429"
+       y="153.79077"
+       id="text5244"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658"><tspan
+         sodipodi:role="line"
+         id="tspan5246"
+         x="150.71429"
+         y="153.79077"
+         style="font-size:24px;font-style:italic;-inkscape-font-specification:Sans Italic">host network</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text5248"
+       y="275.21933"
+       x="152.14285"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/mattmets/Desktop/py/doc/system_architecturepng.png"
+       inkscape:export-xdpi="96.108658"
+       inkscape:export-ydpi="96.108658"><tspan
+         style="font-size:24px;font-style:italic;-inkscape-font-specification:Sans Italic"
+         y="275.21933"
+         x="152.14285"
+         id="tspan5250"
+         sodipodi:role="line">tool network</tspan></text>
+  </g>
+</svg>

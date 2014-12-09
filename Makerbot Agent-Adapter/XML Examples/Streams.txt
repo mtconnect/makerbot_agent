@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectStreams xmlns:m="urn:mtconnect.org:MTConnectStreams:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectStreams:1.2" xsi:schemaLocation="urn:mtconnect.org:MTConnectStreams:1.2 http://www.mtconnect.org/schemas/MTConnectStreams_1.2.xsd">
+    <Header creationTime="2014-07-14T09:40:00+00:00" sender="localhost" instanceId="1267747762" bufferSize="131072" version="1.1" nextSequence="3" firstSequence="1" lastSequence="2" />
+    <Streams>
+        <DeviceStream uuid="D1336V" name="Replicator2">
+            <ComponentStream component="Device" name="Replicator2" componentId="MakerBot">
+                <Events>
+                    <Availability dataItemId="availability" name="availability" sequence="2" timestamp="2014-07-14T10:30:00">AVAILABLE</Availability>
+                    <PowerState dataItemId="powerState" name="powerState" sequence="2" timestamp="2014-07-14T10:30:00">ON</PowerState>
+                </Events>
+            </ComponentStream>
+            <ComponentStream component="Linear" name="X" componentId="x">
+                <Samples>
+                    <Position dataItemId="xPos" name="Actual X Position" subType="ACTUAL" sequence="1" timestamp="2014-07-14T10:30:00">0.0</Position>
+                </Samples>
+            </ComponentStream>
+            <ComponentStream component="Linear" name="Y" componentId="y">
+                <Samples>
+                    <Position dataItemId="yPos" name="Actual Y Position" subType="ACTUAL" sequence="1" timestamp="2014-07-14T10:30:00">0.0</Position>
+                </Samples>
+            </ComponentStream>
+            <ComponentStream component="Linear" name="Z" componentId="z">
+                <Samples>
+                    <Position dataItemId="xPos" name="Actual Z Position" subType="ACTUAL" sequence="1" timestamp="2014-07-14T10:30:00">0.0</Position>
+                </Samples>
+            </ComponentStream>
+            <ComponentStream component="Linear" name="A" componentId="a">
+                <Samples>
+                    <Position dataItemId="aPos" name="Actual B Position" subType="ACTUAL" sequence="1" timestamp="2014-07-14T10:30:00">0.0</Position>
+                </Samples>
+            </ComponentStream>
+            <ComponentStream component="Linear" name="B" componentId="b">
+                <Samples>
+                    <Position dataItemId="bPos" name="Actual B Position" subType="ACTUAL" sequence="1" timestamp="2014-07-14T10:30:00">0.0</Position>
+                </Samples>
+            </ComponentStream>
+            <ComponentStream component="Sensor" name="Toolhead" componentId="toolhead">
+                <Samples>
+                    <Temperature dataItemId="toolheadTemp" name="Toolhead Temp Sensor" sequence="1" timestamp="2014-07-14T10:30:00">0.0</Temperature>
+                </Samples>
+                <Events>
+                    <Execution dataItemId="tooheadReady" name="Toolhead Ready State" sequence="1" timestamp="2014-07-14T10:30:00">READY</Execution>
+                </Events>
+            </ComponentStream>
+            <ComponentStream component="Sensor" name="Extruder" componentId="extruderSensor">
+                <Samples>
+                    <Temperature dataItemId="extruderTemp" name="Extruder Temp Sensor" sequence="1" timestamp="2014-07-14T10:30:00">0.0</Temperature>
+                </Samples>
+                <Events>
+                    <Execution dataItemId="extruderReady" name="Extruder Ready State" sequence="1" timestamp="2014-07-14T10:30:00">READY</Execution>
+                </Events>
+            </ComponentStream>
+            <ComponentStream component="Sensor" name="Platform" componentId="platformSensor">
+                <Samples>
+                    <Temperature dataItemId="platformTemp" name="Platform Temp Sensor" sequence="1" timestamp="2014-07-14T10:30:00">0.0</Temperature>
+                </Samples>
+                <Events>
+                    <Execution dataItemId="platformReady" name="Platform Ready State" sequence="1" timestamp="2014-07-14T10:30:00">READY</Execution>
+                </Events>
+            </ComponentStream>
+            <ComponentStream component="Controller" name="Motherboard" componentId="motherboard">
+                <Events>
+                    <Message dataItemId="powerError" name="Power Error" sequence="1" timestamp="2014-07-14T10:30:00">FALSE</Message>
+                    <Message dataItemId="waitForButton" name="Wait For Button" sequence="1" timestamp="2014-07-14T10:30:00">FALSE</Message>
+                    <Message dataItemId="heatShutdown" name="Heat Shutdown" sequence="1" timestamp="2014-07-14T10:30:00">FALSE</Message>
+                    <Message dataItemId="preheat" name="Preheat" sequence="1" timestamp="2014-07-14T10:30:00">FALSE</Message>
+                    <Message dataItemId="buildCancel" name="Build Cancel" sequence="1" timestamp="2014-07-14T10:30:00">FALSE</Message>
+                </Events>
+            </ComponentStream>
+        </DeviceStream>
+    </Streams>
+</MTConnectStreams>

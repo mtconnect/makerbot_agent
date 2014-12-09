@@ -1,0 +1,45 @@
+// vim:ai:et:fenc=utf-8:ff=unix:sw=4:ts=4:
+
+digraph
+{
+  rankdir=TB;
+
+  "INIT" -> "STATE=WAIT_FOR_HEADER";
+  "PARSE_BYTE" -> "STATE=WAIT_FOR_HEADER?";
+
+  "STATE=WAIT_FOR_HEADER?" [shape=diamond];
+  "STATE=WAIT_FOR_HEADER?" -> "VALID HEADER?" [label="yes"];
+  "STATE=WAIT_FOR_HEADER?" -> "STATE=WAIT_FOR_LENGTH?" [label="no", weight=10];
+  "VALID HEADER?" [shape=diamond];
+  "VALID HEADER?" -> "STATE=WAIT_FOR_LENGTH" [label="yes"];
+  "VALID HEADER?" -> " RAISE PACKET_ERROR" [label="no", weight=10];
+  "STATE=WAIT_FOR_LENGTH" -> "RETURN"
+
+  "STATE=WAIT_FOR_LENGTH?" [shape=diamond];
+  "STATE=WAIT_FOR_LENGTH?" -> "VALID LENGTH?" [label="yes"];
+  "STATE=WAIT_FOR_LENGTH?" -> "STATE=WAIT_FOR_DATA?" [label="no", weight=10];
+  "VALID LENGTH?" [shape=diamond];
+  "VALID LENGTH?" -> "LENGTH=BYTE" [label="yes"];
+  "VALID LENGTH?" -> " RAISE PACKET_ERROR" [label="no", weight=10];
+  "LENGTH=BYTE" -> "STATE=WAIT_FOR_DATA" [label="yes"];
+  "STATE=WAIT_FOR_DATA" -> "RETURN"
+
+  "STATE=WAIT_FOR_DATA?" [shape=diamond];
+  "STATE=WAIT_FOR_DATA?" -> "PAYLOAD.APPEND(BYTE)" [label="yes"];
+  "STATE=WAIT_FOR_DATA?" -> "STATE=WAIT_FOR_CRC?" [label="no", weight=10];
+  "PAYLOAD.APPEND(BYTE)" -> "LENGTH(PAYLOAD)=LENGTH?";
+  "LENGTH(PAYLOAD)=LENGTH?" [shape=diamond];
+  "LENGTH(PAYLOAD)=LENGTH?" -> "STATE=WAIT_FOR_CRC" [label="yes"];
+  "LENGTH(PAYLOAD)=LENGTH?" -> "RETURN" [label="no", weight=10];
+  "STATE=WAIT_FOR_CRC" -> "RETURN";
+
+  "STATE=WAIT_FOR_CRC?" [shape=diamond];
+  "STATE=WAIT_FOR_CRC?" -> "CALCULATE CRC" [label="yes"];
+  "STATE=WAIT_FOR_CRC?" -> " RAISE PROTOCOL_ERROR" [label="no", weight=10];
+  "CALCULATE CRC" -> "VALID CRC?";
+  "VALID CRC?" [shape=diamond];
+  "VALID CRC?" -> "STATE=PAYLOAD_READY" [label="yes"];
+  "VALID CRC?" -> " RAISE PACKET_ERROR" [label="no", weight=10];
+
+  "STATE=PAYLOAD_READY" -> "RETURN";
+}
