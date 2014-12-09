@@ -1,0 +1,22 @@
+{
+  "PID"  :
+  {
+    "pid_example" :
+    {
+      "part"  :   "super_part",
+      "baudrate"  :   -1,
+      "programmer"  :   "uber_programmer",
+      "versions"  :
+        {
+        "0.1" : [
+          "./firmware/Example-0.1.hex",
+          "version:0.1"
+          ],
+        "1.0" : [
+          "./firmware/Example-1.0.hex",
+          "version:1.0"
+          ]
+        }
+     }
+  }
+}

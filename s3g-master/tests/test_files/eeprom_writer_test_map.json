@@ -1,0 +1,81 @@
+{
+  "eeprom_map" : { 
+    "foo" : {
+      "offset"  : "0x0000",
+      "type"    : "b",
+      "sub_map" : {
+          "ichi"  : {
+            "offset"  : "0xaabb",
+            "type"  : "II"
+            },
+          "ni"  : {
+            "offset"  : "0xaac2",
+            "type"  : "b"
+            }
+        }
+      },
+    "bar" : {
+      "offset"  : "0x0002",
+      "type"    : "i"
+      },
+    "baz" : {
+      "offset"  : "0x0006",
+      "type"    : "s",
+      "length"  : 16
+      },
+    "T0_DATA_BASE"  : {
+      "eeprom_map" : "toolhead_offsets",
+      "offset" : "0x0016",
+      "sub_map" : {
+          "foobar"  : {
+            "offset"  : "0x0000",
+            "type"    : "i"
+            },
+          "bingban" : {
+            "offset"  : "0x0004",
+            "type"    : "b"
+          }
+       } 
+      },
+    "barfoo"  : {
+      "offset"  : "0x0004",
+      "type"    : "b",
+      "sub_map" : {
+          "unus"  : {
+            "offset"  : "0xaabb",
+            "type"  : "hh",
+            "floating_point"  : "True"
+            }
+        }
+      },
+    "T1_DATA_BASE"  : {
+      "eeprom_map"  : "toolhead_offsets",
+      "offset"  : "0x001c",
+      "sub_map" : {
+          "foobar"  : {
+            "offset"  : "0x0000",
+            "type"    : "I"
+            },
+          "bingban" : {
+            "offset"  : "0x0004",
+            "type"    : "b"
+          }
+       } 
+      },
+    "ACCELERATION_TABLE"  : {
+      "eeprom_map"  : "acceleration_offsets",
+      "offset"  : "0x0022",
+      "sub_map" : {
+        "bazbar"  : {
+          "offset"  : "0x0000",
+          "type"    : "s",
+          "length"  : 16
+        },
+        "bingbangboing" : {
+          "offset"  : "0x0010",
+          "type"    : "b"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.2 ../MTConnectDevices_1.2.xsd">
+    <Header bufferSize="10" instanceId="1" creationTime="2014-07-14T09:05:00" sender="MAYA-Makerbot" version="1.2" assetCount="0" assetBufferSize="10"/>
+    <Devices>
+        <Device id="Makerbot" uuid="D1336V" name="Replicator2">
+            <DataItems>
+                <DataItem id="availability" type="AVAILABILITY" name="availablility" category="EVENT"/>
+            </DataItems>
+            <Components>
+                <Axes id="axes" name="Axes">
+                    <Components>
+                        <Linear id="x" name="X">
+                            <DataItems>
+                                <DataItem id="xPos" name="Actual X Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Linear id="y" name="Y">
+                            <DataItems>
+                                <DataItem id="yPos" name="Actual Y Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Linear id="z" name="Z">
+                            <DataItems>
+                                <DataItem id="zPos" name="Actual Z Position" type="POSITION" subType="FAKE" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Linear id="a" name="A">
+                            <DataItems>
+                                <DataItem id="aPos" name="Actual A Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Rotary id="b" name="B">
+                            <DataItems>
+                                <DataItem id="bPos" name="Actual B Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Rotary>
+                    </Components>
+                </Axes>
+                <Sensor id="toolhead" name="Toolhead">
+                    <DataItems>
+                        <DataItem type="TEMPERATURE" id="toolheadTemp" category="SAMPLE" name="Toolhead Temp Sensor"/>
+                        <DataItem type="EXECUTION" id="toolheadReady" category="EVENT" name="Toolhead Ready State" />
+                    </DataItems>
+                    <Components>
+                        <Sensor id="extruderSensor" name="Extruder">
+                            <DataItems>
+                                <DataItem type="EXECUTION" id="extruderReady" category="EVENT" name="Extruder Ready State" />
+                            </DataItems>
+                        </Sensor>
+                    </Components>
+                </Sensor>
+                <Sensor id="platform" name="Platform">
+                    <DataItems>
+                        <DataItem type="TEMPERATURE" id="platformTemp" category="SAMPLE" name="Platform Temp Sensor"/>
+                        <DataItem type="EXECUTION" id="platformReady" category="EVENT" name="Platform Ready State" />
+                    </DataItems>
+                </Sensor>
+                <Controller id="motherboard" name="Motherboard">
+                    <Components>
+                        <Path id="motherboardPath" name="Motherboard Path">
+                            <DataItems>
+                                <DataItem type="MESSAGE" id="powerError" category="EVENT" name="Power Error"/>
+                                <DataItem type="MESSAGE" id="waitForButton" category="EVENT" name="Wait For Button"/>
+                                <DataItem type="MESSAGE" id="heatShutdown" category="EVENT" name="Heat Shutdown"/>
+                                <DataItem type="MESSAGE" id="preheat" category="EVENT" name="Preheat"/>
+                                <DataItem type="MESSAGE" id="buildCancel" category="EVENT" name="Build Canceling"/>
+                            </DataItems>
+                        </Path>
+                    </Components>
+                </Controller>
+            </Components>
+        </Device>
+        <Device id="Makerbot" uuid="D1336C" name="Replicator2-2">
+            <DataItems>
+                <DataItem id="availability" type="AVAILABILITY" name="availablility" category="EVENT"/>
+            </DataItems>
+            <Components>
+                <Axes id="axes" name="Axes">
+                    <Components>
+                        <Linear id="x" name="X">
+                            <DataItems>
+                                <DataItem id="xPos" name="Actual X Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Linear id="y" name="Y">
+                            <DataItems>
+                                <DataItem id="yPos" name="Actual Y Position" type="POSITION" subType="FKAE" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Linear id="z" name="Z">
+                            <DataItems>
+                                <DataItem id="zPos" name="Actual Z Position" type="POSITION" subType="FAKE" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Linear id="a" name="A">
+                            <DataItems>
+                                <DataItem id="aPos" name="Actual A Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Rotary id="b" name="B">
+                            <DataItems>
+                                <DataItem id="bPos" name="Actual B Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Rotary>
+                    </Components>
+                </Axes>
+                <Sensor id="toolhead" name="Toolhead">
+                    <DataItems>
+                        <DataItem type="TEMPERATURE" id="toolheadTemp" category="SAMPLE" name="Toolhead Temp Sensor"/>
+                        <DataItem type="EXECUTION" id="toolheadReady" category="EVENT" name="Toolhead Ready State" />
+                    </DataItems>
+                    <Components>
+                        <Sensor id="extruderSensor" name="Extruder">
+                            <DataItems>
+                                <DataItem type="EXECUTION" id="extruderReady" category="EVENT" name="Extruder Ready State" />
+                            </DataItems>
+                        </Sensor>
+                    </Components>
+                </Sensor>
+                <Sensor id="platform" name="Platform">
+                    <DataItems>
+                        <DataItem type="TEMPERATURE" id="platformTemp" category="SAMPLE" name="Platform Temp Sensor"/>
+                        <DataItem type="EXECUTION" id="platformReady" category="EVENT" name="Platform Ready State" />
+                    </DataItems>
+                </Sensor>
+                <Controller id="motherboard" name="Motherboard">
+                    <Components>
+                        <Path id="motherboardPath" name="Motherboard Path">
+                            <DataItems>
+                                <DataItem type="MESSAGE" id="powerError" category="EVENT" name="Power Error"/>
+                                <DataItem type="MESSAGE" id="waitForButton" category="EVENT" name="Wait For Button"/>
+                                <DataItem type="MESSAGE" id="heatShutdown" category="EVENT" name="Heat Shutdown"/>
+                                <DataItem type="MESSAGE" id="preheat" category="EVENT" name="Preheat"/>
+                                <DataItem type="MESSAGE" id="buildCancel" category="EVENT" name="Build Canceling"/>
+                            </DataItems>
+                        </Path>
+                    </Components>
+                </Controller>
+            </Components>
+        </Device>
+    </Devices>
+</MTConnectDevices>

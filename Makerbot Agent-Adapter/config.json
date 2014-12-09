@@ -1,0 +1,8 @@
+{
+    "DeviceConfigurationFile":"Makerbot_Config.xml",
+    "ErrorReference":"Errors.xml",
+    "HTTPHost":{
+        "IP":"127.0.0.1",
+        "Port":1080
+    }
+}

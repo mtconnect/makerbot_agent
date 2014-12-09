@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectAssets xmlns:m="urn:mtconnect.org:MTConnectAssets:1.2" xmlns="urn:mtconnect.org:MTConnectAssets:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectAssets:1.2 http://mtconnect.org/schemas/MTConnectAssets_1.2.xsd">
+    <Header creationTime="2014-07-14T11:25:22" assetBufferSize="1024" sender="MAYA MakerBot" assetCount="0" version="1.2" instanceId="1234"/>
+    <Assets>
+        <CuttingTool />
+    </Assets>
+</MTConnectAssets>

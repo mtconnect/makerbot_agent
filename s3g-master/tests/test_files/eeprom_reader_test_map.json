@@ -1,0 +1,21 @@
+{
+  "eeprom_map"  : {
+      "value" : {
+          "return_value"  : 252645135,
+          "offset"  : "0x0000",
+          "type"        :   "i"
+          },
+      "floating_point" : {
+          "return_value"  : 128.5,
+          "offset"  : "0x0004",
+          "floating_point"  : "True",
+          "type"        :   "H"
+          },
+      "string" : {
+          "return_value" : "Replicator",
+          "offset"  : "0x0006",
+          "type"    : "s",
+          "length"  : "11"
+          }
+      }
+}

@@ -1,0 +1,5 @@
+*.pyc
+build
+dist
+pyserial.egg-info
+.sconsign.dblite

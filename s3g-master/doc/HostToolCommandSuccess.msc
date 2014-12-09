@@ -1,0 +1,11 @@
+msc {
+  width = "800";
+
+  PC,Host,Tool;
+
+  PC->Host [label="Tool query\nQuery='Get Toolhead Temperature'" ];
+  Host->Tool [ label="Get Toolhead Temperature" ];
+  Tool->Tool [ label="RetrieveTemperature()" ];
+  Tool->Host [ label="Success, Temperature=C"];
+  Host->PC [ label="Success, Temperature=C" ];
+}

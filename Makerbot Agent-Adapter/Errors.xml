@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectError xmlns="urn:mtconnect.org:MTConnectError:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectError:1.2 http://www.mtconnect.org/schemas/MTConnectError_1.2.xsd">
+    <Header bufferSize="1024" instanceId="1" creationTime="2014-07-14T09:05:00" sender="MAYA-Makerbot" version="1.2"/>
+    <Errors>
+        <Error errorCode="INVALID_REQUEST" >No Assets Found.</Error>
+    </Errors>
+</MTConnectError>

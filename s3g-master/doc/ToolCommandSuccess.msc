@@ -1,0 +1,9 @@
+msc {
+  width = "800";
+
+  PC,Host,Tool;
+
+  Host->Tool [ label="Get Toolhead Temperature" ];
+  Tool->Tool [ label="RetrieveTemperature()" ];
+  Tool->Host [ label="Success, Temperature=C"];
+}
